@@ -1,15 +1,31 @@
 # simple-parcel-template
 
-To install dependencies:
+simple template that uses parcel and has hot module reloading, typescript, and tailwind setup
 
-```bash
-bun install
+## getting started
+
+run these commands:
+
+```shell
+# clone
+git clone https://github.com/maxhu08/simple-parcel-template.git
+cd simple-parcel-template
+
+# remove git info
+rm -rf .git
+
+# install dependencies
+bun i
 ```
 
-To run:
+to run:
 
-```bash
-bun run index.ts
+```shell
+# development mode
+bun dev
+
+# production mode
+bun build
 ```
 
-This project was created using `bun init` in bun v1.1.29. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+then go to the link it gives, which will probably be `localhost:1234`
