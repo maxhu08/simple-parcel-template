@@ -5,7 +5,8 @@
   "scripts": {
     "d": "bun dev",
     "dev": "parcel src/*.html",
-    "build": "rm -rf dist && parcel build src/*.html",
+    "build": "rm -rf dist && parcel build src/*.html --no-source-maps",
+    "clean": "rm -rf .parcel-cache && rm -rf dist",
     "prettier": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json,html}\""
   },
   "devDependencies": {
